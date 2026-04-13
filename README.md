@@ -1,19 +1,34 @@
-Hospital Management & Patient Analytics System
--> Project Overview
+# Hospital Management & Patient Analytics System
+
+## Project Overview
 
 This project is a Database Management System (DBMS) designed to manage hospital operations efficiently. It stores and analyzes data related to patients, doctors, appointments, and treatments to generate meaningful insights for better decision-making.
 
--> Objectives
-Design a relational database for hospital data
-Manage patient, doctor, and treatment records
-Perform data analysis using SQL queries
-Generate insights like revenue, doctor performance, and disease trends
--> Tables Used
-Patients – Stores patient details
-Doctors – Stores doctor information and specialization
-Appointments – Tracks patient visits
-Treatments – Stores diagnosis and treatment cost
--> Database Schema
+---
+
+## Objectives
+
+* Design a relational database for hospital data
+* Manage patient, doctor, and treatment records
+* Perform data analysis using SQL queries
+* Generate insights like revenue, doctor performance, and disease trends
+
+---
+
+## Database Design
+
+### Tables Used
+
+* Patients – Stores patient details
+* Doctors – Stores doctor information and specialization
+* Appointments – Tracks patient visits
+* Treatments – Stores diagnosis and treatment cost
+
+---
+
+## Database Schema
+
+```sql
 CREATE DATABASE hospital_db;
 USE hospital_db;
 
@@ -47,30 +62,74 @@ CREATE TABLE Treatments (
     date DATE,
     FOREIGN KEY (patient_id) REFERENCES Patients(patient_id)
 );
--> Key Features / Queries
- 1. Most Consulted Doctors
-Identifies doctors with highest number of patient visits
- 2. Monthly Revenue Analysis
-Calculates total treatment cost per month
- 3. Most Common Diseases
-Finds frequently occurring diagnoses
- 4. Patient Visit Frequency
-Tracks number of visits per patient
- 5. Doctor Performance
-Evaluates doctors based on patients handled
--> Advanced Analysis
-Top revenue-generating patients
-Doctor specialization performance
-Monthly patient visit trends
-->  How to Run
-Install MySQL Server & Workbench
-Open MySQL Workbench
-Run the SQL script to create database and tables
-Insert sample data
-Execute queries to generate insights
--> Expected Outcomes
-Identify busiest doctors
-Analyze hospital revenue trends
-Detect common diseases
-Monitor patient activity
-Evaluate doctor efficiency
+```
+
+---
+
+## Key Features / Queries
+
+### 1. Most Consulted Doctors
+
+* Identifies doctors with highest number of patient visits
+
+### 2. Monthly Revenue Analysis
+
+* Calculates total treatment cost per month
+
+### 3. Most Common Diseases
+
+* Finds frequently occurring diagnoses
+
+### 4. Patient Visit Frequency
+
+* Tracks number of visits per patient
+
+### 5. Doctor Performance
+
+* Evaluates doctors based on patients handled
+
+---
+
+## Advanced Analysis
+
+* Top revenue-generating patients
+* Doctor specialization performance
+* Monthly patient visit trends
+
+---
+
+## How to Run
+
+1. Install MySQL Server and Workbench
+2. Open MySQL Workbench
+3. Run the SQL script to create database and tables
+4. Insert sample data
+5. Execute queries to generate insights
+
+---
+
+## Expected Outcomes
+
+* Identify busiest doctors
+* Analyze hospital revenue trends
+* Detect common diseases
+* Monitor patient activity
+* Evaluate doctor efficiency
+
+---
+
+
+## Future Enhancements
+
+* Add user interface using Python (Streamlit or Flask)
+* Integrate real-time data entry system
+* Add patient history tracking
+* Implement data visualization dashboards
+
+---
+
+## Author
+
+Sonalika
+
+---
